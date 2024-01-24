@@ -1,0 +1,103 @@
+.game-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .cells-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .left-cells,
+  .right-cells {
+    display: flex;
+  }
+  
+  .cell {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .cell.active {
+    background-color: #4caf50; /* Cor quando a célula está ativa */
+  }
+  
+  .divider {
+    height: 80px;
+    width: 2px;
+    background-color: #333;
+    margin: 0 20px;
+  }
+
+  .modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .custom-modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .modal-question {
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+  
+  .modal-button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+    margin: 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .modal-button:hover {
+    background-color: #2980b9;
+  }
+
+  .cell-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .active-image {
+    position: absolute;
+    top: -24px; /* Ajuste conforme necessário para a posição desejada acima da célula */
+    left: 50%; /* Centraliza a imagem */
+    transform: translateX(-50%); /* Centraliza a imagem horizontalmente */
+  }
